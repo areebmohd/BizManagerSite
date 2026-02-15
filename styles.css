@@ -1,0 +1,77 @@
+/* Reset and base styles */
+body {
+  background-color: #160078; /* Dark indigo */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* Container for the column layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  padding-bottom: 120px; /* Space for fixed button */
+  width: 100%;
+  max-width: 95%;
+  margin: auto;
+}
+
+/* Download Button Styles */
+.links {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  width: 100%;
+}
+
+.links a {
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive image styles */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Desktop adjustments */
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+    padding: 40px;
+    padding-bottom: 100px;
+  }
+}
