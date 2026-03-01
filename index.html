@@ -3,27 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BizManager - The ultimate business management tool. Track transactions, manage business records, and grow your business with our easy-to-use mobile app."
+    />
+    <meta
+      name="keywords"
+      content="business manager, transaction tracker, business records, inventory management, business app"
+    />
+    <meta name="author" content="BizManager" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/areebmohd/BizManagerSite"
+    />
+    <meta
+      property="og:title"
+      content="BizManager - Manage Your Business Effectively"
+    />
+    <meta
+      property="og:description"
+      content="Streamline your business operations with BizManager. Download the APK today."
+    />
+    <meta property="og:image" content="BizManagrAppIcon.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/areebmohd/BizManagerSite"
+    />
+    <meta
+      property="twitter:title"
+      content="BizManager - Manage Your Business Effectively"
+    />
+    <meta
+      property="twitter:description"
+      content="Streamline your business operations with BizManager. Download the APK today."
+    />
+    <meta property="twitter:image" content="BizManagrAppIcon.png" />
+
     <title>BizManager</title>
     <link rel="icon" type="image/png" href="BizManagrAppIcon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="https://github.com/areebmohd/BizManagerSite" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "BizManager",
+        "operatingSystem": "Android",
+        "applicationCategory": "BusinessApplication",
+        "description": "The ultimate business management tool for tracking transactions and managing records.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
   <body>
-    <div class="container">
-      <img src="1.png" alt="App Screenshot 1" class="gallery-image" />
-      <img src="2.png" alt="App Screenshot 2" class="gallery-image" />
-      <img src="3.png" alt="App Screenshot 3" class="gallery-image" />
-      <div class="more">
-        <div class="pages">
+    <header style="display: none">
+      <h1>BizManager - Ultimate Business Manager App</h1>
+    </header>
+    <main class="container">
+      <div class="gallery">
+        <img
+          src="1.png"
+          alt="BizManager Transaction Dashboard"
+          class="gallery-image"
+        />
+        <img
+          src="2.png"
+          alt="BizManager Inventory Management"
+          class="gallery-image"
+        />
+        <img
+          src="3.png"
+          alt="BizManager Analytics and Reports"
+          class="gallery-image"
+        />
+      </div>
+
+      <div class="links">
+        <a
+          href="https://github.com/areebmohd/BusinessManager/releases/download/v1.0.3/BizManager.apk"
+          class="download-button"
+          >Download App</a
+        >
+      </div>
+
+      <footer class="more">
+        <nav class="pages">
           <a href="privacypolicy.html">Privacy policy</a>
           <a href="termsofservice.html">Terms of service</a>
-        </div>
+        </nav>
         <div class="copyright">
           <p>© 2026 BizManager. All rights reserved.</p>
         </div>
-      </div>
-    </div>
-    <div class="links">
-      <a href="https://github.com/areebmohd/BusinessManager/releases/download/v1.0.3/BizManager.apk">Download App</a>
-    </div>
+      </footer>
+    </main>
   </body>
 </html>
